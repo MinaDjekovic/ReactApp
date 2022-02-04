@@ -1,11 +1,9 @@
 import React from 'react'
-import Navigacija from './Navigacija'
 import kategorije from '../kategorije.json'
 import Kategorija from './Kategorija'
-export default function Kategorije() {
+export default function Kategorije(props) {
     return (
         <>
-            <Navigacija />
             <div className='container'>
                 <Kategorija kategorija={{
                     naziv: "Naziv kategorije",

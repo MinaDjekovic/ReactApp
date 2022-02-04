@@ -3,6 +3,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Kalkulator from './components/Kalkulator';
 import Kategorije from './components/Kategorije';
+import Navigacija from './components/Navigacija';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
 
         <Route path='/kategorije'>
+          <Navigacija/>
           <Kategorije />
         </Route>
         <Route path='/kalkulator'>

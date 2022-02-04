@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navigacija from './Navigacija'
+import Kategorije from './Kategorije';
 
 export default function Kalkulator() {
     const [tezina, setTezina] = useState(0);
@@ -35,9 +36,16 @@ export default function Kalkulator() {
                 {
                     index > 0 && <div className='row  mt-2'>
                         <h2>Vas BMI iznosi: {index}</h2>
+                        <Kategorije></Kategorije>
 
                     </div>
+
                 }
+
+
+
+
+
             </div>
         </>
     )
